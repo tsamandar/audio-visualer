@@ -1,1 +1,1 @@
-# audio-visualer
+# Created by Samandar Turdiev
