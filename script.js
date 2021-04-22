@@ -1,4 +1,4 @@
-var body, num, array, width, context, logo, myElements, analyser, src, height;
+let body, num, array, width, context, logo, myElements, analyser, src, height;
 
 body = document.querySelector('body');
 
@@ -14,7 +14,7 @@ window.onclick = function(){
 
     body.querySelector('h1').remove();
 
-    for(var i = 0 ; i < num ; i++){
+    for(let i = 0 ; i < num ; i++){
         logo = document.createElement('div');
         logo.className = 'logo';
         logo.style.background = 'red';
@@ -41,7 +41,7 @@ window.onclick = function(){
 function loop() {
     window.requestAnimationFrame(loop);
     analyser.getByteFrequencyData(array);
-    for(var i = 0 ; i < num ; i++){
+    for(let i = 0 ; i < num ; i++){
         height = array[i+num];
         myElements[i].style.minHeight = height+'px';
         myElements[i].style.opacity = 0.008*height;
